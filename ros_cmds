@@ -10,3 +10,10 @@ ros2 run v4l2_camera v4l2_camera_node --ros-args \
   -p video_device:="/dev/video1" \
   -p pixel_format:="mjpeg" \
   -p image_size:=[640,480]
+
+
+ros2 run usb_cam usb_cam_node_exe --ros-args \
+  -p video_device:="/dev/video0" \
+  -p pixel_format:="mjpeg2rgb" \
+  -p image_width:=1280 \
+  -p image_height:=720
